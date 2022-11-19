@@ -1,0 +1,154 @@
+/* root variable */
+:root {
+  --primary-btn: #1e90ff;
+  --danger-color: red;
+  --color-primary: rgb(186, 178, 178);
+  --color-secondary: #99929214;
+  --font-color-primary: gray;
+  --padding-1-5: 1.5rem;
+  --padding-1: 1rem;
+  --padding-0-5: 0.5rem;
+}
+
+/* universal css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* main container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* meetup-card style */
+
+.meetup-card {
+  display: flex;
+  width: 75%;
+  height: 85%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px 0px var(--color-primary);
+}
+
+.meetup-details {
+  width: 40%;
+  height: 100%;
+  background: var(--color-secondary);
+  box-shadow: 0px 0px 4px 0px var(--color-primary);
+  padding: var(--padding-1-5);
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+.meetup-time-details {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.9rem;
+}
+
+.details {
+  padding: 0.2rem;
+}
+
+/* global style css */
+.h-5 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--font-color-primary);
+}
+
+.h-4 {
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.h-3 {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.h-2 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+/* form area style */
+.meetup-form {
+  padding: var(--padding-1-5);
+  width: 60%;
+  overflow-x: auto;
+}
+
+.form-section {
+  margin-top: var(--padding-1);
+  margin-bottom: var(--padding-1);
+  width: 100%;
+}
+
+.form-section > div {
+  margin-bottom: var(--padding-0-5);
+  display: inline-grid;
+  width: 100%;
+}
+
+.form-section > div > input {
+  margin-top: var(--padding-0-5);
+  width: 80%;
+  height: 40px;
+  border-radius: var(--padding-1);
+  outline: none;
+  border: 1px solid gray;
+  padding: var(--padding-0-5);
+  box-shadow: 0px 0px 2px gray;
+}
+
+.form-section > div > input:focus {
+  box-shadow: 0px 0px 2px var(--primary-btn);
+}
+
+.form-section > div > textarea {
+  margin-top: var(--padding-0-5);
+  width: 80%;
+  padding: var(--padding-0-5);
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+  border: 1px solid gray;
+  padding: var(--padding-0-5);
+  box-shadow: 0px 0px 2px gray;
+}
+
+.addGuest-btn {
+  width: 120px;
+  margin-top: 20px;
+  border-radius: 2rem;
+  color: #1677ff;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+}
+/* error for empty input */
+.error {
+  border: 1px solid var(--danger-color);
+}
+
+/* modal style */
+.center-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  margin: 1rem 0 1rem 0;
+}

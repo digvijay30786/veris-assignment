@@ -1,0 +1,10 @@
+@media screen and (max-width: 819px) {
+  .meetup-card {
+    flex-direction: column;
+  }
+  .meetup-details,
+  .meetup-form {
+    width: 100%;
+    height: 1200px;
+  }
+}
